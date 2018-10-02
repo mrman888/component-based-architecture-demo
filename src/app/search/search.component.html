@@ -3,3 +3,6 @@
 </p>
 <search-input (queryChanged)="onQueryChanged($event)"></search-input>
 <search-results [searchResults]="searchResultItems"></search-results>
+<br><br>
+
+{{selectedSearchItem?.description}}

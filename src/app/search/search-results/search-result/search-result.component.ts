@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { SearchResultItem } from '../../shared/search-result-item';
+import { SelectedItemService } from '../../shared/selected-item.service';
 
 @Component({
   selector: 'search-result',
@@ -11,12 +12,12 @@ export class SearchResultComponent implements OnInit {
   @Input()
   searchResultItem: SearchResultItem;
 
-  constructor() { }
+  constructor(private selectedItemService: SelectedItemService) { }
 
   ngOnInit() {
   }
   
   resultSelected() {
-    debugger;
+    this.selectedItemService.setSelectedItem(this.searchResultItem);
   }
 }

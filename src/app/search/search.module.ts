@@ -12,7 +12,7 @@ import { SearchSharedModule } from './shared/search-shared.module';
   imports: [
     CommonModule,
     FormsModule,
-    SearchSharedModule
+    SearchSharedModule.forRoot()
   ],
   declarations: [
                   SearchComponent, 
