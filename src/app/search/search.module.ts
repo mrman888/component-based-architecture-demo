@@ -5,17 +5,20 @@ import { SearchResultsComponent } from './search-results/search-results.componen
 import { SearchInputComponent } from './search-input/search-input.component';
 import { FormsModule } from '@angular/forms'; 
 import { SearchService } from './search.service';
-import { SearchDetailComponent } from './search-results/search-detail/search-detail.component';
+import { SearchResultComponent } from './search-results/search-result/search-result.component';
+import { SearchSharedModule } from './shared/search-shared.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
+    SearchSharedModule
   ],
   declarations: [
                   SearchComponent, 
                   SearchResultsComponent, 
-                  SearchInputComponent, SearchDetailComponent],
+                  SearchInputComponent, 
+                  SearchResultComponent],
   exports: [
     SearchComponent,
   ],

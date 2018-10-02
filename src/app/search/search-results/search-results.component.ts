@@ -16,7 +16,5 @@ export class SearchResultsComponent implements OnInit {
   ngOnInit() {
   }
 
-  resultSelected(item: SearchResultItem) {
-  }
 
 }
