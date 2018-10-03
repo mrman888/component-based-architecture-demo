@@ -20,7 +20,7 @@ export class SearchResultsComponent implements OnInit {
 
   }
 
-  resultSelected(item: SearchResultItem) {
-      this.selectedItemChanged.emit(item);
+  onSelectedItemChanged(item: SearchResultItem) {
+   this.selectedItemChanged.emit(item);
   }
 }

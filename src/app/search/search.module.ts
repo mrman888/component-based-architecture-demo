@@ -5,6 +5,7 @@ import { SearchResultsComponent } from './search-results/search-results.componen
 import { SearchInputComponent } from './search-input/search-input.component';
 import { FormsModule } from '@angular/forms';
 import { SearchService } from './search.service';
+import { SearchResultComponent } from './search-results/search-result/search-result.component';
 
 @NgModule({
   imports: [
@@ -14,7 +15,8 @@ import { SearchService } from './search.service';
   declarations: [
                   SearchComponent,
                   SearchResultsComponent,
-                  SearchInputComponent],
+                  SearchInputComponent,
+                  SearchResultComponent],
   exports: [
     SearchComponent,
   ],

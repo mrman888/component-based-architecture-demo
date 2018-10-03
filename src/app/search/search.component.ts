@@ -29,6 +29,6 @@ export class SearchComponent implements OnInit {
   }
 
   public onSelectedItemChanged(item: SearchResultItem) {
-    this.selectedItem = item;
+     this.selectedItem = item;
   }
 }
