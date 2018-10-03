@@ -1,9 +1,2 @@
-<div>
-<table>
-  <tbody>
-  <tr *ngFor="let item of searchResults" >
-    <search-result [searchResultItem]="item" (selectedItemChanged)="onSelectedItemChanged($event)"></search-result>
-  </tr>
-  </tbody>
-</table>  
-</div>
+
+    <search-result [searchResultItem]="item" (selectedItemChanged)="onSelectedItemChanged($event)" *ngFor="let item of searchResults" ></search-result>
