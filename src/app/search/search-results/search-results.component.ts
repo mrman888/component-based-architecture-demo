@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { SearchResultItem } from '../shared/search-result-item';
+import { SelectedItemService } from 'src/app/search/shared/selected-item.service';
 
 @Component({
   selector: 'search-results',
@@ -8,13 +9,15 @@ import { SearchResultItem } from '../shared/search-result-item';
 })
 export class SearchResultsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private selectedItemService: SelectedItemService) { }
 
   @Input()
   public searchResults: SearchResultItem[];
 
   ngOnInit() {
   }
-
-
-}
+  
+  onSelectedItemChanged(item: SearchResultItem) {
+    this.selectedItemService.setSelectedItem(item);
+  }
+ }

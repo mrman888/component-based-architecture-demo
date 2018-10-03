@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { SearchResultItem } from '../../shared/search-result-item';
 import { SelectedItemService } from '../../shared/selected-item.service';
 
@@ -12,12 +12,15 @@ export class SearchResultComponent implements OnInit {
   @Input()
   searchResultItem: SearchResultItem;
 
-  constructor(private selectedItemService: SelectedItemService) { }
+  @Output()
+  selectedItemChanged = new EventEmitter<SearchResultItem>();
+
+  constructor() { }
 
   ngOnInit() {
   }
   
   resultSelected() {
-    this.selectedItemService.setSelectedItem(this.searchResultItem);
+    this.selectedItemChanged.emit(this.searchResultItem);
   }
 }

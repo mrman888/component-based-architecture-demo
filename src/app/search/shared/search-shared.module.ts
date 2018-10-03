@@ -5,16 +5,16 @@ import { ModuleWithProviders } from '@angular/compiler/src/core';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
   ],
   declarations: []
 })
 export class SearchSharedModule { 
-  static forRoot(): ModuleWithProviders {
+  /* static forRoot(): ModuleWithProviders {
     return {
       ngModule: SearchSharedModule,
       providers: [SelectedItemService]
     };
-  }
+  } */
 }
 

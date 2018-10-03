@@ -7,12 +7,13 @@ import { FormsModule } from '@angular/forms';
 import { SearchService } from './search.service';
 import { SearchResultComponent } from './search-results/search-result/search-result.component';
 import { SearchSharedModule } from './shared/search-shared.module';
+import { SelectedItemService } from './shared/selected-item.service';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
-    SearchSharedModule.forRoot()
+    SearchSharedModule
   ],
   declarations: [
                   SearchComponent, 
@@ -23,7 +24,8 @@ import { SearchSharedModule } from './shared/search-shared.module';
     SearchComponent,
   ],
   providers: [
-    SearchService
+    SearchService,
+    SelectedItemService
   ]
 })
 export class SearchModule { 

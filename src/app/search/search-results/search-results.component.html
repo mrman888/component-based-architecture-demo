@@ -1,7 +1,7 @@
 <table>
   <tbody>
   <tr *ngFor="let item of searchResults">
-     <search-result [searchResultItem]="item"></search-result>
+     <search-result [searchResultItem]="item" (selectedItemChanged)="onSelectedItemChanged($event)"></search-result>
   </tr>
   </tbody>
 </table>  
