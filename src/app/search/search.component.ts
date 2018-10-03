@@ -12,6 +12,7 @@ export class SearchComponent implements OnInit {
 
   private searchRequest: SearchRequest;
   private searchResultItems: SearchResultItem[];
+  private selectedItem: SearchResultItem;
 
   constructor(private searchService: SearchService) {
 
@@ -25,5 +26,9 @@ export class SearchComponent implements OnInit {
   public onQueryChanged(query: string) {
     this.searchRequest.query = query;
     this.searchResultItems = this.searchService.search(this.searchRequest);
+  }
+
+  public onSelectedItemChanged(item: SearchResultItem) {
+    this.selectedItem = item;
   }
 }

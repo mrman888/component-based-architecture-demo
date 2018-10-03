@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { SearchResultItem } from '../shared/search-result-item';
 
 @Component({
@@ -13,6 +13,14 @@ export class SearchResultsComponent implements OnInit {
   @Input()
   public searchResults: SearchResultItem[];
 
+  @Output()
+  selectedItemChanged = new EventEmitter<SearchResultItem>();
+
   ngOnInit() {
+
+  }
+
+  resultSelected(item: SearchResultItem) {
+      this.selectedItemChanged.emit(item);
   }
 }

@@ -1,4 +1,6 @@
 <div>
   <search-input (queryChanged)="onQueryChanged($event)" [defaultQuery]="searchRequest.query"></search-input>
-  <search-results [searchResults]="searchResultItems"></search-results>
+  <search-results [searchResults]="searchResultItems" (selectedItemChanged)="onSelectedItemChanged($event)"></search-results>
 </div>
+
+{{selectedItem?.description}}

@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { SearchComponent } from './search.component';
 import { SearchResultsComponent } from './search-results/search-results.component';
 import { SearchInputComponent } from './search-input/search-input.component';
-import { FormsModule } from '@angular/forms'; 
+import { FormsModule } from '@angular/forms';
 import { SearchService } from './search.service';
 
 @NgModule({
@@ -12,8 +12,8 @@ import { SearchService } from './search.service';
     FormsModule,
   ],
   declarations: [
-                  SearchComponent, 
-                  SearchResultsComponent, 
+                  SearchComponent,
+                  SearchResultsComponent,
                   SearchInputComponent],
   exports: [
     SearchComponent,
@@ -22,5 +22,5 @@ import { SearchService } from './search.service';
     SearchService
   ]
 })
-export class SearchModule { 
+export class SearchModule {
 }
