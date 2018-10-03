@@ -1,4 +1,4 @@
-import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output, Input } from '@angular/core';
 
 @Component({
   selector: 'search-input',
@@ -9,6 +9,9 @@ export class SearchInputComponent implements OnInit {
 
   public query: string;
 
+  @Input()
+  defaultQuery: string;
+
   @Output()
   queryChanged = new EventEmitter<string>();
 
@@ -16,7 +19,15 @@ export class SearchInputComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.query = this.defaultQuery;
+  }
 
+  onFocus(event: any) {
+    this.query = '';
+  }
+
+  onBlur(event: any) {
+    this.query = this.defaultQuery;
   }
 
   onKey(event: any) { // without type info

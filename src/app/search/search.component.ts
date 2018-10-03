@@ -14,11 +14,12 @@ export class SearchComponent implements OnInit {
   private searchResultItems: SearchResultItem[];
 
   constructor(private searchService: SearchService) {
-    this.searchRequest = new SearchRequest();
 
   }
 
   ngOnInit() {
+    this.searchRequest = new SearchRequest();
+    this.searchRequest.query = 'Please enter a search term';
   }
 
   public onQueryChanged(query: string) {

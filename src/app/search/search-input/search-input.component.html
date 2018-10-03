@@ -1,3 +1,3 @@
-<p>
-  <input #searchInput type="text" [(ngModel)]="query" (keyup)="onKey($event)">
-</p>
+<div>
+  <input #searchInput type="text" [(ngModel)]="query" (keyup)="onKey($event)" (focus)="onFocus($event)" (blur)="onBlur($event)">
+</div>

@@ -1,5 +1,4 @@
-<p>
-  search works!
-</p>
-<search-input (queryChanged)="onQueryChanged($event)"></search-input>
-<search-results [searchResults]="searchResultItems"></search-results>
+<div>
+  <search-input (queryChanged)="onQueryChanged($event)" [defaultQuery]="searchRequest.query"></search-input>
+  <search-results [searchResults]="searchResultItems"></search-results>
+</div>
