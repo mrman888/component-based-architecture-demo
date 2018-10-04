@@ -7,9 +7,11 @@ export class SearchService {
 
     public search(searchRequest: SearchRequest) {
          const searchResultItems: SearchResultItem[] = [];
-         searchResultItems.push(new SearchResultItem('result 1'));
-         searchResultItems.push(new SearchResultItem('result 2'));
-         searchResultItems.push(new SearchResultItem('result 3'));
+         searchResultItems.push(new SearchResultItem('Bart'));
+         searchResultItems.push(new SearchResultItem('Homer'));
+         searchResultItems.push(new SearchResultItem('Marge'));
+         searchResultItems.push(new SearchResultItem('Lisa'));
+         searchResultItems.push(new SearchResultItem('Maggie'));
 
          return searchResultItems.filter((s) => s.description.indexOf(searchRequest.query) >= 0 );
     }
