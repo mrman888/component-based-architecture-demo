@@ -1,5 +1,5 @@
 <div>
-    {{selectedItem?.description}}</div>
+    Selected item: {{selectedItem?.description}}</div>
 <div>
   <search-input (queryChanged)="onQueryChanged($event)"></search-input>
   <search-results [searchResults]="searchResultItems" (selectedItemChanged)="onSelectedItemChanged($event)"></search-results>
