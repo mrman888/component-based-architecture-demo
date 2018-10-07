@@ -7,6 +7,7 @@ import { SearchModule } from './search/search.module';
 import { SearchComponent } from './search/search.component';
 import { NavigationComponent } from './core/components/navigation/navigation.component';
 import { CoreModule } from './core/core.module';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { CoreModule } from './core/core.module';
   imports: [
     BrowserModule,
     CoreModule,
+    SharedModule,
     SearchModule,
     AppRoutingModule,
   ],

@@ -15,7 +15,6 @@ import { CoreModule } from '../core/core.module';
   imports: [
     CommonModule,
     FormsModule,
-    CoreModule,
     SearchSharedModule,
     SearchRoutingModule
   ],
