@@ -12,8 +12,8 @@ import { SearchComponent } from './search/search.component';
   ],
   imports: [
     BrowserModule,
+    SearchModule,
     AppRoutingModule,
-    SearchModule
   ],
   providers: [],
   bootstrap: [AppComponent]
