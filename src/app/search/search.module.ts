@@ -8,12 +8,14 @@ import { SearchService } from './search.service';
 import { SearchResultComponent } from './search-results/search-result/search-result.component';
 import { SearchSharedModule } from './shared/search-shared.module';
 import { SelectedItemService } from './shared/selected-item.service';
+import { SearchRoutingModule } from './search-routing.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
-    SearchSharedModule
+    SearchSharedModule,
+    SearchRoutingModule
   ],
   declarations: [
                   SearchComponent, 
