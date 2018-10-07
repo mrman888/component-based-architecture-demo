@@ -9,11 +9,13 @@ import { SearchResultComponent } from './search-results/search-result/search-res
 import { SearchSharedModule } from './shared/search-shared.module';
 import { SelectedItemService } from './shared/selected-item.service';
 import { SearchRoutingModule } from './search-routing.module';
+import { CoreModule } from '../core/core.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
+    CoreModule,
     SearchSharedModule,
     SearchRoutingModule
   ],

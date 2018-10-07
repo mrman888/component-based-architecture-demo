@@ -7,6 +7,13 @@ import { LoadSpinnerComponent } from './components/load-spinner/load-spinner.com
   imports: [
     CommonModule
   ],
-  declarations: [NavigationComponent, LoadSpinnerComponent]
+  declarations: [
+      NavigationComponent, 
+      LoadSpinnerComponent
+  ],
+  exports: [
+    NavigationComponent,
+    LoadSpinnerComponent
+  ]
 })
 export class CoreModule { }

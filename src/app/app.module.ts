@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SearchModule } from './search/search.module';
 import { SearchComponent } from './search/search.component';
+import { NavigationComponent } from './core/components/navigation/navigation.component';
+import { CoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [
@@ -12,6 +14,7 @@ import { SearchComponent } from './search/search.component';
   ],
   imports: [
     BrowserModule,
+    CoreModule,
     SearchModule,
     AppRoutingModule,
   ],
