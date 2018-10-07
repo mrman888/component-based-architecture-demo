@@ -3,7 +3,7 @@ import { SearchResultItem } from '../shared/search-result-item';
 import { SelectedItemService } from 'src/app/search/shared/selected-item.service';
 
 @Component({
-  selector: 'search-results',
+  selector: 'app-search-results',
   templateUrl: './search-results.component.html',
   styleUrls: ['./search-results.component.scss']
 })

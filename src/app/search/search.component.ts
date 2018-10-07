@@ -5,7 +5,7 @@ import { SearchService } from './search.service';
 import { SelectedItemService } from './shared/selected-item.service';
 
 @Component({
-  selector: 'search',
+  selector: 'app-search',
   templateUrl: './search.component.html',
   styleUrls: ['./search.component.scss']
 })
