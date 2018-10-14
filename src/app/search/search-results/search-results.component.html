@@ -1,2 +1,4 @@
-<app-search-result [searchResultItem]="item" (selectedItemChanged)="onSelectedItemChanged($event)"
-*ngFor="let item of searchResults" ></app-search-result>
+<div>
+    <app-search-result [searchResultItem]="item" (selectedItemChanged)="onSelectedItemChanged($event)"
+    *ngFor="let item of searchResults" ></app-search-result>
+</div>
