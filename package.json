@@ -9,7 +9,7 @@
     "stylelint:watch": "onchange \"src/**/*.scss\" -- npm run lint:styles",
     "test": "ng test",
     "lint": "ng lint",
-    "lint:watch":  "onchange \"src/**/*.ts\" -- npm run lint",
+    "lint:watch": "onchange \"src/**/*.ts\" -- npm run lint",
     "lint:styles": "stylelint \"src/**/*.scss\" && stylelint \"libs/**/*.scss\"",
     "e2e": "ng e2e"
   },
