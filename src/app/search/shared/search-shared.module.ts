@@ -9,7 +9,7 @@ import { ModuleWithProviders } from '@angular/compiler/src/core';
   ],
   declarations: []
 })
-export class SearchSharedModule { 
+export class SearchSharedModule {
   /* static forRoot(): ModuleWithProviders {
     return {
       ngModule: SearchSharedModule,

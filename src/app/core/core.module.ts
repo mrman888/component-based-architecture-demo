@@ -8,7 +8,7 @@ import { LoadSpinnerComponent } from './components/load-spinner/load-spinner.com
     CommonModule
   ],
   declarations: [
-      NavigationComponent, 
+      NavigationComponent,
       LoadSpinnerComponent
   ],
   exports: [

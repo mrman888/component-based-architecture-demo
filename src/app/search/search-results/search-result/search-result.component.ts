@@ -19,7 +19,7 @@ export class SearchResultComponent implements OnInit {
 
   ngOnInit() {
   }
-  
+
   resultSelected() {
     this.selectedItemChanged.emit(this.searchResultItem);
   }

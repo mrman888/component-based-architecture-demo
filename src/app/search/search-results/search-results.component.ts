@@ -16,7 +16,7 @@ export class SearchResultsComponent implements OnInit {
 
   ngOnInit() {
   }
-  
+
   onSelectedItemChanged(item: SearchResultItem) {
     this.selectedItemService.setSelectedItem(item);
   }

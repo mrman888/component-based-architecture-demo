@@ -11,18 +11,18 @@ app-search {
     app-search-input { 
         display:block;
         padding: 20px 100px 20px 100px;
-      //  background-color:lightblue;
+    
     }
 
     app-search-results { 
         display:block;
         padding-left:50px;
         padding-right:50px;
-        //background-color:lightgoldenrodyellow;
+        background-color:lightgoldenrodyellow;
     }
 }
 
-@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "@angular/material/prebuilt-themes/indigo-pink.css";
 
 html, body { height: 100%; }
 body { margin: 0; font-family: 'Roboto', sans-serif; }
