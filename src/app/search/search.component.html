@@ -1,5 +1,7 @@
-<div>Selected item: {{selectedSearchItem?.description}}</div>
-<app-search-input (queryChanged)="onQueryChanged($event)"></app-search-input>
-<app-search-results [searchResults]="searchResultItems"></app-search-results>
-<br><br>
+<div class="container">
+    <div>Selected item: {{selectedSearchItem?.description}}</div>
+    <app-search-input (queryChanged)="onQueryChanged($event)"></app-search-input>
+    <app-search-results [searchResults]="searchResultItems"></app-search-results>
+    <br><br>
+<div>
 

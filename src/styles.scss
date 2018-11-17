@@ -1,26 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 /* You can add global styles to this file, and also import other style files */
 /* You can add global styles to this file, and also import other style files */
-app-search { 
-    //background-color:silver;
-    display:block;
-    padding-left:100px;
-    padding-right:100px;
-    padding-bottom:50px;
-
-    app-search-input { 
-        display:block;
-        padding: 20px 100px 20px 100px;
-    
-    }
-
-    app-search-results { 
-        display:block;
-        padding-left:50px;
-        padding-right:50px;
-        background-color:lightgoldenrodyellow;
-    }
-}
 
 @import "@angular/material/prebuilt-themes/indigo-pink.css";
 
