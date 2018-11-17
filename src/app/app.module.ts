@@ -1,4 +1,3 @@
-import { RegistrationFormModule } from './registration-form/registration-form.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -8,6 +7,7 @@ import { AppComponent } from './app.component';
 import { SearchModule } from './search/search.module';
 import { CoreModule } from './core/core.module';
 import { SharedModule } from './shared/shared.module';
+import { RegistrationModule } from './registration/registration.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +18,7 @@ import { SharedModule } from './shared/shared.module';
     BrowserAnimationsModule,
     CoreModule,
     SearchModule,
-    RegistrationFormModule,
+    RegistrationModule,
     AppRoutingModule,
   ],
   providers: [],
